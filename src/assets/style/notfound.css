@@ -1,0 +1,25 @@
+#error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error .title {
+    font-size: 24px;
+    color: #371B02;
+}
+
+#error .content {
+    font-size: 15px;
+    color: #000000B2;
+    margin: 20px 0;
+}
+
+#error button {
+    background-color: #371B02;
+    height: 50px;
+    width: 220px;
+    color: #fff;
+    font-family: 'Ganh', sans-serif;
+    cursor: pointer;
+}
