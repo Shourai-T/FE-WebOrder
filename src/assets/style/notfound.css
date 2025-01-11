@@ -23,3 +23,35 @@
     font-family: 'Ganh', sans-serif;
     cursor: pointer;
 }
+
+@media (max-width: 391px) {
+    #error {
+        height: 844px;
+        justify-content: center;
+    }
+
+    #error img {
+        width: 350px;
+        height: 350px;
+    }
+
+    #error .title {
+        font-size: 15px;
+        color: #371B02;
+    }
+    
+    #error .content {
+        font-size: 12px;
+        color: #000000B2;
+        margin: 20px 0;
+    }
+
+    #error button {
+        background-color: #371B02;
+        height: 50px;
+        width: 200px;
+        color: #fff;
+        font-family: 'Ganh', sans-serif;
+        cursor: pointer;
+    }
+}

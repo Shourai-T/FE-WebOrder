@@ -96,9 +96,10 @@
     margin-bottom: 50px;
 }
 
-#home .home-body .item-container h1 {
+#home .home-body .container h1 {
     font-size: 30px;
     text-decoration: underline;
+    overflow-x: auto;
 }
 
 #home .item-container .item-list {
@@ -139,4 +140,145 @@
     height: 100px;
     width: 100%;
     bottom: 0;
+}
+
+@media (max-width: 391px) {
+    #home .home-header {
+        position: relative;
+        background-image: url('../img/homepg.png');
+        width: 100%;
+        height: 163px;
+    }
+    
+    #home .home-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        z-index: 1;
+    }
+
+    #home .material-symbols-outlined {
+        position: absolute;
+        z-index: 2;
+        top: 18px;
+        right: 18px;
+        font-size: 30px;
+        color: #371B02;
+    }
+
+    #home .home-content {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 30%;
+        right: 0;
+        left: 0;
+    }
+    
+    #home .home-content h1 {
+        font-family: 'DFVN Lucky Skirt', sans-serif;
+        font-size: 40px;    
+    }
+    
+    #home .home-content p {
+        font-size: 12px;
+    }
+
+    #home .home-header__search {
+        position: relative;
+        z-index: 2;
+        width: 250px;
+        bottom: -90%;
+        margin: auto;
+    }
+    
+    #home .home-header__search input {
+        width: 100%;
+        padding: 5px 40px 5px 10px;
+        height: 35px;
+        border-radius: 30px;
+        border: 1px solid #371B02;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: #371B02;
+    }
+    
+    #home .home-header__search input::placeholder {
+        color: #00000059;
+        font-family: 'Ganh', sans-serif;
+        font-size: 12px;
+    }
+    
+    #home .home-header__search img {
+        position: absolute;
+        right: 9px; /* Canh icon cách bên phải 20px */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    #home .home-body {
+        margin: 30px 10px;
+    }
+    
+    #home .home-body .item-container {
+        margin-bottom: 12px;
+        overflow-x: auto;
+    }
+
+    #home .home-body .container h1 {
+        font-size: 14px;
+        text-decoration: underline;
+    }
+
+    #home .item-container .item-list {
+        display: flex;
+        position: relative;
+        width: max-content;
+        gap: 5px;
+        margin: 0;
+    }
+    
+    #home .item-container .item img {
+        width: 80px;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+    #home .home-body .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+        z-index: 1;
+        color: #fff;
+    } 
+    
+    #home .home-body .item-name {
+        font-size: 10px;
+        margin: 3px 0px 4px 0px;
+    }
+    
+    #home .home-body .item .price {
+        font-size: 12px;
+    }
+    
+    #home .home-body .layer {
+        position: absolute;
+        background-color: #371B02;
+        border-radius: 12px;
+        height: 70px;
+        width: 100%;
+        bottom: 0;
+    }
 }
