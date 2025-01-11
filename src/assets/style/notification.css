@@ -20,5 +20,32 @@
     transform: translateX(-50%) translateY(0);
     opacity: 1;
     visibility: visible;
-  }
+}
+
+/* Respon iPhone 13 */
+@media (max-width: 391px) {
+    .notification {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background-color: #fff;
+        height: 30px;
+        width: 250px;
+        font-size: 12px;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease-in-out;
+        z-index: 9999;
+    }
+    
+    .notification img {
+        width: 20px;
+        height: 20px;
+    }
+}
   

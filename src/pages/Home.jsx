@@ -27,21 +27,23 @@ const Home = () => {
       </div>
       <div className="home-body">
         {itemsData.map((category) => (
-          <div className="item-container" key={category.title}>
+          <div className="container" key={category.title}>
             <h1>{category.title}</h1>
-            <div className="item-list">
-              {category.items.map((item) => (
-                <div
-                  className="item"
-                  key={item.id}
-                  onClick={() => handleItemClick(item)}
-                >
-                  <img src={item.image} alt={item.name} />
-                  <p className="item-name">{item.name}</p>
-                  <p className="price">{item.price} VND</p>
-                </div>
-              ))}
-              <div className="layer"></div>
+            <div className="item-container">
+              <div className="item-list">
+                {category.items.map((item) => (
+                  <div
+                    className="item"
+                    key={item.id}
+                    onClick={() => handleItemClick(item)}
+                  >
+                    <img src={item.image} alt={item.name} />
+                    <p className="item-name">{item.name}</p>
+                    <p className="price">{item.price} VND</p>
+                  </div>
+                ))}
+                <div className="layer"></div>
+              </div>
             </div>
           </div>
         ))}
